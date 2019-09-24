@@ -14,7 +14,7 @@ $ rails generate controller Welcome index
 
 #Ava app/views/welcome/index.html.erb, redaktor HTML peale
 #Kustuta kõik ja asenda: 
-		"<h1>Hello, Rails!</h1>"
+		<!--<h1>Hello, Rails!</h1>-->
 #Ava config/routes.rb ja asenda: 
 		Rails.application.routes.draw do
 		  get 'welcome/index'
@@ -37,7 +37,7 @@ $ rails generate controller Articles
 
 #Tee uus fail at app/views/articles/new.html.erb (Faili extension on rubyOnRails)
 #Lisa see sinna faili: 
-		"<h1>New Article</h1>"
+		<!--<h1>New Article</h1>"-->
 #Kontrolli, et töötab ja lisa: (See joonistab esimese formi)
 		<%= form_with scope: :article, url: articles_path, local: true do |form| %>
 		  <p>
@@ -126,13 +126,13 @@ $ rails db:migrate
 		  end
 
 #Loo uus fail app/views/articles/index.html.erb ja lisa: 
-<h1>Listing articles</h1>
+<!--<h1>Listing articles</h1>
 		<table>
 		  <tr>
 		    <th>Title</th>
 		    <th>Text</th>
 		    <th></th>
-		  </tr>
+		  </tr>-->
 		 
 		  <% @articles.each do |article| %>
 		    <tr>
@@ -146,5 +146,5 @@ $ rails db:migrate
 #Nüüd on võimalik vaadata kõiki artikkleid localhost:3000/articles
 
 #Saame ka harcodeida stiili, et oleks natuke arusaadavam, 
-		"<h1 style = "color: red; justify-content: center;text-align: center;">Listing articles</h1>"
-		"<div style = "display: flex; flex-direction: column; justify-content: center; align-items: center;text-align: center;min-height: 100vh">"
+		<!--<h1 style = "color: red; justify-content: center;text-align: center;">Listing articles</h1>"
+		"<div style = "display: flex; flex-direction: column; justify-content: center; align-items: center;text-align:center;min-height: 100vh">-->
